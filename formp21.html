@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF=8">
+<meta name="viewport"
+content="width=device-width,initial-scale=1.0">
+<title> HTML form </title>
+<style>
+body{
+background-color:#278;
+font-size:20px;
+}
+fieldset{
+border:4px solid white;
+}
+button{
+width:70px;
+height;45px;
+}
+</style>
+</head>
+<body>
+<form action="#submit" method="post">
+<fieldset>
+<legend><h2> Basic Information</h2> </legend>
+<label for="name" >Name:</label>
+<input type="text" id="name" placeholder="Enter Your Name" required><br> <br>
+
+DOB:<input type="date" id="dob" placeholder="DOB" required><br> <br>
+
+Father's Name: <input type="text" id="fathersname" placeholder="Father's Name">
+
+Mother's Name: <input type="text" id="mothersname" placeholder="Mother's Name"><br> <br>
+
+password:<input type="password" id="password" >
+<br><br>
+
+<label for="gender"> gender: </label> <br>
+<input type="radio" id="male" name="gender" value="male">
+<label for="male"> male </label>
+<input type="radio" id="female" value="female" name="gender">
+<label for="female">female </label>
+<input type="radio" id="other" name="gender" value="other">
+<label for="other"> other </label>
+
+<hr>
+
+<legend><h2>  Contact Information</h2> </legend> 
+
+Contact No.<input type="number" id="contactno" placeholder="contact"><br> <br>
+
+Email ID :<input type="type" id="email" placeholder="abc@gmail.com"><br> <br>
+
+Address:<br><textarea rows="3" cols="70" placeholder="enter Address..."></textarea><br>
+<hr>
+
+<legend><h2>Academic Information </h2></legend>
+
+<label for="department">choose your department:</label>
+<select id="department" value="department">
+<option value="">choose department<option>
+<option value="Computer Department">Computer Department</option>
+<option value="Civil Department">Civil Department</option>
+<option value="ENTC">ENTC</option>
+<option value="mechanical department">Mechanical Department</option>
+<option value="Metallurgy department">Metallurgy department</option>
+<option value="DDGM">DDGM </option>
+</select><br><br>
+
+Enrollment No:<input for="number" id="enno" placeholder="En no."><hr>
+
+<center><input type="submit" value="submit"></center>
+</form>
+
+</body>
+</html>
